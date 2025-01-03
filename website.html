@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+<body style="background-color: #eae1ff;">
+    <!-- this section is for the navbar -->
+    <nav class="navbar navbar-expand-lg navbar-expand-md w-100 h-100 container-fluid" style="background-color: #BAA8E6;">
+      <div class="container w-100 "> 
+          <div class="navbar-nav mx-auto   ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <a class="nav-link  mx-2 fs-5 col-lg-2 col-md-2 col-sm-2 nav_animation" aria-current="page" href="./website.html">Home</a>
+            <a class="nav-link mx-2  fs-5 col-lg-2 col-md-2 col-sm-2 nav_animation" href="#aboutme">About</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link nav-item dropdown-toggle mx-2 fs-5 col-lg-2 col-md-2 col-sm-2 " href="#portfolio" role="button" data-bs-toggle="dropdown">
+                Portfolio
+              </a>
+              <ul class="dropdown-menu">
+                  <div class="container">
+                            <div class="sub-stats">
+                                <table class="table table-hover">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col"><a href="#" class="nav-link">Graphic Softwares</a></th>
+                                        <th scope="col"><a href="#" class="nav-link">Web Technologies</a></th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                            <a href="#photoshop" class="nav-link">Photoshop</a>
+                                        </td>
+                                        <td><a href="#" class="nav-link">HTML</a></td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                            <a href="#illustrator" class="nav-link">Illustrator</a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="nav-link">CSS</a></td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#coreldraw" class="nav-link">CorelDraw</a></td>
+                                        <td colspan="2"><a href="#" class="nav-link">Bootstrap</a></td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#" class="nav-link">Animate CC</a></td>
+                                        <td colspan="2"><a href="#" class="nav-link"></a></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <a class="nav-link mx-2 fs-5 col-lg-2 col-md-2 col-sm-2 nav_animation" href="#awards">Awards</a>
+            <a class="nav-link mx-2 fs-5 col-lg-2 col-md-2 col-sm-2 nav_animation" href="" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="contacts">Contact</a>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Contact</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="name" class="col-form-label" class="fw-bold">Your Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="Email" class="col-form-label" class="fw-bold">Your Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="message-text" class="col-form-label" class="fw-bold">Service Required</label><br>
+                        <input type="radio" id="Service" name="service" value="Service">
+                           <label for="service1">Graphic Designing</label>
+                        <input type="radio" id="Service" name="service" value="Service">
+                            <label for="service2">Web Designing</label><br>
+                      </div>
+                      <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Message:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" type="submit" class="btn"  data-bs-dismiss="modal" >Close</button>
+                    <button type="button" type="submit" class="btn" style="background-color:#7755c7; color: #eae1ff;" >Send message</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+
+
+            <!-- section for modal -->
+            <a class="nav-link mx-2 fs-5 col-lg-2 col-md-2 col-sm-2 nav_animation" href="#hireme">Hire Me</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- hero section -->
+      <div class="container w-100 " style="color: #7755c7; height: 90vh; padding-top: 9rem;">
+        <div class="container w-100">
+          <div class="row d-flex align-items-center">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+        <h1 class="fs-1 h1 " style="color: #7755c7;">I am a <span id="graphict" class="font1">Graphic</span> &<br> <span id="graphict" class="font1">Web Designer</span></h1>
+      <p class="fs-5" >I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people</p>
+    <!-- this section is for the socail media icon -->
+      <div class="container-fluid" >
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-6 " id="contacts">
+          <a href="https://www.behance.net/abhishekkumar08" target="_blank">
+            <img src="./assets/Behance_Icon.png" alt="Behance_Icon" class="img-fluid col-lg-2 col-md-2 col-sm-2" id="icons"></a>
+          <a href="https://www.instagram.com/arto_abhi?igsh=djdybDlheGt5OG83" target="_blank">
+            <img src="./assets/Instagram_Icon.png" alt="Instagram_Icon" class="img-fluid col-lg-2 col-md-2 col-sm-2" id="icons"></a>
+          <a href=" https://twitter.com/2308_abhishek?t=aMu6GqZNw90h4k3S7qItVg&s=08" target="_blank">
+            <img src="./assets/Twitter_Icon.png" alt="Twitter_Icon" class="img-fluid col-lg-2 col-md-2 col-sm-2" id="icons"></a>
+          <a href="" target="_blank"><img src="./assets/Linkdin_Icon.png" alt="Linkdin_Icon" class="img-fluid col-lg-2 col-md-2 col-sm-2" id="icons"></a>
+          
+        </div>
+      </div>
+    </div>
+    </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 "><img src="./assets/Profile_pic(abhi)new-01.png" alt="Profile Image" class="img-fluid"></div>
+        </div>
+      </div>
+    </div>
+    
+   
+    <img src="./assets/wavey-01.png" alt="waves" class="img-fluid w-100" id="wavey">
+        <!-- This is the section for the stats -->
+         <!--  -->
+    <div class="container-fluid w-100 h-50" style="color: #7755c7;">
+      <div class="container py-4">
+      <div class="h2 text-center text-uppercase my-5 header_animation">
+        <h2>Portfolio</h2>
+      </div>
+      <!-- this section is for carousel -->
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+               <div class="container">  
+      <!--  -->
+      <div class="container d-block w-100 ">
+        <div class="row ">
+          <!-- 1st card -->
+          <!-- first carosel -->
+          <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12  g-5">
+              <div class="card" style="width: 18rem; height:20rem" id="photoshop">
+                  <img src="./assets/Photoshop/Foodie-Magazine-3.jpg" class="card-img-top p-2 img-fluid " alt="Magazine-Cover-Design">
+                  <div class="card-body d-flex align-items-end">
+                    <a href="" class="nav-link"> <p class="card-text fs-5">Magazine Cover Design</p></a>
+                    
+                  </div>
+                </div>
+        </div>
+          <!-- end -->
+          <!-- 2nd card -->
+          <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 g-5">
+              <div class="card" style="width: 18rem; height: 20rem;">
+                  <img src="./assets/Photoshop/Intersteller_movie_poster.jpg" class="card-img-top p-2 img-fluid " alt="Movie-Poster-Design">
+                  <div class="card-body d-flex align-items-end">
+                    <a href="" class="nav-link"> <p class="card-text fs-5">Movie Poster Design</p></a>
+                    
+                  </div>
+                </div>
+        </div>
+        <!-- 3rd card -->
+        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 g-5">
+          <div class="card" style="width: 18rem; height: 20rem;">
+              <img src="./assets/Photoshop/Lord-shiva-medidation-manipulation.jpg" class="card-img-top p-2 img-fluid " alt="Image_Manipulation">
+              <div class="card-body d-flex align-items-end">
+                <a href="" class="nav-link"> <p class="card-text fs-5">Image Manipulation</p></a>
+                
+              </div>
+            </div>
+    </div>
+    <!-- 4th card -->
+    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 g-5">
+      <div class="card" style="width: 18rem; height: 20rem;">
+          <img src="./assets/Photoshop/Social-Media-poster_pizza1.jpg" class="card-img-top p-2 img-fluid " alt="poster_design">
+          <div class="card-body d-flex align-items-end">
+            <a href="" class="nav-link"> <p class="card-text fs-5">Social Media Poster</p></a>
+            
+          </div>
+        </div>
+</div>
+<!-- end -->
+      </div>
+    </div>
+    <h2 class="text-center my-5 ">Photoshop Works</h2>
+    </div>
+    <!-- section -->
+            </div>
+            <!-- 2nd carousel -->
+            <div class="carousel-item" data-bs-interval="4000">
+               <div class="container">  
+      <!--  -->
+      <div class="container d-block w-100">
+        <div class="row ">
+          <!-- 1st card -->
+          <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 g-5">
+              <div class="card" id="illustrator" style="width: 18rem; height:20rem">
+                  <img src="./assets/Illustrator/logo_design.jpg" class="card-img-top p-2 img-fluid " alt="logo_design">
+                  <div class="card-body d-flex align-items-end">
+                    <a href="" class="nav-link"> <p class="card-text  fs-5">Logo Designing & Branding</p></a>
+                    
+                  </div>
+                </div>
+        </div>
+          <!-- end -->
+          <!-- 2nd card -->
+          <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 g-5">
+            <div class="card" style="width: 18rem; height:20rem">
+                <img src="./assets/Illustrator/Menu_card_design.jpg" class="card-img-top p-2 img-fluid" alt="Menu_card_design">
+                <div class="card-body d-flex align-items-end">
+                  <a href="" class="nav-link"> <p class="card-text  fs-5 ">Menu Card Design</p></a>
+                  
+                </div>
+              </div>
+      </div>
+        <!-- 3rd card -->
+        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 g-5">
+          <div class="card" style="width: 18rem; height:20rem">
+              <img src="./assets/Illustrator/Shang-chi_Neon.jpg" class="card-img-top p-2 img-fluid " alt="Minimalist_Movie_Poster">
+              <div class="card-body d-flex align-items-end">
+                <a href="" class="nav-link"> <p class="card-text fs-5">Minimalist Movie Poster</p></a>
+                
+              </div>
+            </div>
+    </div>
+    <!-- 4th card -->
+<div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 g-5">
+  <div class="card" style="width: 18rem; height:20rem">
+      <img src="./assets/Illustrator/weblayout.jpg" class="card-img-top p-2 img-fluid " alt="weblayout">
+      <div class="card-body d-flex align-items-end">
+        <a href="" class="nav-link"> <p class="card-text  fs-5">Vector Weblayout</p></a>
+        
+      </div>
+    </div>
+</div>
+<!-- end -->
+      </div>
+    </div>
+    <h2 class="text-center my-5">Illustrator Works</h2>
+    </div>
+    <!-- section -->
+    <!-- 3rd carousel -->
+            </div>
+            <div class="carousel-item " data-bs-interval="4000">
+               <div class="container">  
+      <!--  -->
+      <div class="container d-block w-100">
+        <div class="row ">
+          <!-- 1st card -->
+          <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 g-5">
+              <div class="card" style="width: 18rem; height:20rem">
+                  <img src="./assets/CorelDraw/Brochure-Design.jpg" id="coreldraw" class="card-img-top p-2 img-fluid " alt="Brochure-Design">
+                  <div class="card-body d-flex align-items-end">
+                    <a href="" class="nav-link"> <p class="card-text fs-5">Brochure Design</p></a>
+                    
+                  </div>
+                </div>
+        </div>
+          <!-- end -->
+          <!-- 2nd card -->
+          <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 g-5">
+              <div class="card" style="width: 18rem; height:20rem">
+                  <img src="./assets/CorelDraw/Pamphlet_Design.jpg" class="card-img-top p-2 img-fluid w-100" alt="Pamphlet_Design">
+                  <div class="card-body d-flex align-items-end">
+                    <a href="" class="nav-link"> <p class="card-text fs-5">Pamphlet Design</p></a>
+                    
+                  </div>
+                </div>
+        </div>
+        <!-- 3rd card -->
+        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 g-5">
+          <div class="card" style="width: 18rem; height:20rem">
+              <img src="./assets/CorelDraw/Product_Packaging_Final.jpg" class="card-img-top p-2 img-fluid w-100" alt="Product_Packaging_Final">
+              <div class="card-body d-flex align-items-end">
+                <a href="" class="nav-link"> <p class="card-text fs-5">Product Packaging</p></a>
+                
+              </div>
+            </div>
+    </div>
+    <!-- 4th card -->
+    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 g-5">
+      <div class="card" style="width: 18rem; height:20rem">
+          <img src="./assets/CorelDraw/Space_Theme_Calander.jpg" class="card-img-top p-2 img-fluid w-100" alt="calender">
+          <div class="card-body d-flex align-items-end">
+            <a href="" class="nav-link"> <p class="card-text fs-5">Calender Design</p></a>
+            
+          </div>
+        </div>
+</div>
+<!-- end -->
+      </div>
+    </div>
+    <h2 class="text-center my-5">CorelDraw Works</h2>
+    </div>
+    <!-- 4TH carousel -->
+  </div>
+  <div class="carousel-item " data-bs-interval="4000">
+     <div class="container">  
+<!--  -->
+<div class="container d-block w-100">
+<div class="row ">
+<!-- 1st card -->
+<div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 g-5">
+    <div class="card" style="width: 18rem; height:20rem">
+        <img src="./assets/website1.jpg" id="website" class="card-img-top p-2 img-fluid " alt="website">
+        <div class="card-body d-flex align-items-end">
+          <a href="" class="nav-link"> <p class="card-text fs-5">HTML & CSS</p></a>
+          
+        </div>
+      </div>
+</div>
+<!-- end -->
+<!-- 2nd card -->
+<div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 g-5">
+    <div class="card" style="width: 18rem; height:20rem">
+        <img src="./assets/website3.jpg" class="card-img-top p-2 img-fluid w-100" alt="website">
+        <div class="card-body d-flex align-items-end">
+          <a href="" class="nav-link"> <p class="card-text fs-5">HTML & CSS</p></a>
+          
+        </div>
+      </div>
+</div>
+<!-- 3rd card -->
+<div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 g-5">
+<div class="card" style="width: 18rem; height:20rem">
+    <img src="./assets/website4.jpg" class="card-img-top p-2 img-fluid w-100" alt="website">
+    <div class="card-body d-flex align-items-end">
+      <a href="" class="nav-link"> <p class="card-text fs-5">HTML & CSS</p></a>
+      
+    </div>
+  </div>
+</div>
+<!-- 4th card -->
+<div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 g-5">
+<div class="card" style="width: 18rem; height:20rem">
+<img src="./assets/website2.jpg" class="card-img-top p-2 img-fluid w-100" alt="website">
+<div class="card-body d-flex align-items-end">
+  <a href="" class="nav-link"> <p class="card-text fs-5">HTML & CSS</p></a>
+  
+</div>
+</div>
+</div>
+<!-- end -->
+</div>
+</div>
+<h2 class="text-center my-5">Web Designs</h2>
+</div>
+    <!-- section -->
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      <!--  -->
+     
+    </div>
+    </div>
+
+<!--  -->
+        <!-- this is one section -->
+         <!-- this is about me -->
+        <!-- This section is for the content of the webpage -->
+    <div class="container-fluid w-100 h-100 fw-semibold" style="color: #4c357d; background-color: #c9c3ef;" >
+    <div class="container-fluid py-5">   
+      <div class="text-center header_animation"><h2 id="aboutme">About Me</h2></div>
+      <div class="row mx-5 fs-5">
+      <p><span class="fs-3" id="graphict">I'm a Graphic & Web Designer,</span><br>and I know how to create the perfect logo, brand identity, or website.</p>
+    </div>
+    <div class="row mx-5 fs-5 my-3 ">
+      <p><span class="fs-4 fw-bold" id="graphict">Expertise:</span> I have extensive experience designing logos, branding campaigns, websites, and more.</p>
+    </div>
+    <div class="row mx-5 fs-5 my-3 ">
+      <p><span class="fs-4 fw-bold" id="graphict">Tool Knowledge:</span> In addition to my graphic design skills, I have extensive knowledge of Adobe Photoshop and Illustrator. These tools allow me to create high-quality designs quickly and efficiently.</p>
+    </div>
+    <div class="row mx-5 fs-5 my-5">
+      <p><span class="fs-4 fw-bold" id="graphict">Passion:</span> I'm passionate about what I do because it allows me to help others succeed in their business endeavors.</p>
+    </div>
+  </div>
+    </div>
+    <img src="./assets/wavey-01.png" alt="waves" class="img-fluid w-100" id="wavey" >
+<!-- this section is for the awards -->
+<div class="container-fluid w-100" style="background-color: #BAA8E6; margin-top: -1.25rem;">
+  <div class="container w-100 p-5 ">
+    <h2 class="text-center header_animation text-uppercase" id="awards">Awards</h2>
+    <div class="container w-100 my-5">
+      <div class="row w-100">
+        <div class="col-lg-3 col-md-6 col-sm-12 g-5" id="award"><img src="./assets/awards/certificate2.jpg" alt="" class="img-fluid"></div>
+        <div class="col-lg-3 col-md-6 col-sm-12 g-5" id="award"><img src="./assets/awards/certiifcate1.jpg" alt="" class="img-fluid"></div>
+        <div class="col-lg-3 col-md-6 col-sm-12 g-5" id="award"><img src="./assets/awards/certificate3.jpg" alt="" class="img-fluid"></div>
+        <div class="col-lg-3 col-md-6 col-sm-12 g-5" id="award"><img src="./assets/awards/prize.jpeg" alt="" class="img-fluid w-100 h-100"></div>
+      </div>
+  </div>
+    </div>
+  </div>
+    
+
+
+<!-- end of this section -->
+<hr>
+    <!-- This section is for the Hire Me -->
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col text-animation ">
+            <h2 class="text-center  " id="hireme">Hire me</h2>
+            <!-- <h2 class="text-center  " id="hireme">Hire me</h2> -->
+          </div>
+          <div class="col-12 w-100 my-5" >
+          <img src="./assets/resumeBackground-01.png" alt="ResumeBackground" class="img-fluid my-2 w-50 d-flex justify-content-center mx-auto" id="ResumeBackground">
+        </div>
+          <div class="col-lg-12 d-flex justify-content-center my-5"> 
+            <a href="./assets/Docs/Resume.pdf" download="Resume.pdf" class="btn px-5 py-3 fw-bold header_animation" id="resumeButton" > Get My Resume</a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer mt-auto py-3 ">
+      <div class="container text-center">
+          <p class="mb-0">2024 &copy; All Rights Reserved</p>
+      </div>
+  </footer>
+<!-- This is the cdn for the bootstrap for the java script -->
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./bootstrap/js/jquery-3.6.3.min.js"></script>
+</body>
+</html>
